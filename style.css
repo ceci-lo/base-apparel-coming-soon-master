@@ -23,7 +23,7 @@ body {
 .rigth-img {
   background-image: url(../images/hero-desktop.jpg);
   background-size: cover;
-  background-position: center center;
+  background-position: center;
   width: 40%;
 }
 
@@ -90,10 +90,12 @@ button {
   border-style: none;
   padding: 15px;
 }
+
 button:hover {
   opacity: 0.6;
   cursor: pointer;
 }
+
 .icon-error {
   display: none;
   position: absolute;

@@ -8,7 +8,9 @@
 body {
   background-image: url(../images/bg-pattern-desktop.svg);
   background-size: cover;
+  background-repeat: no-repeat;
   background-position: center center;
+  background-attachment: fixed;
   font-size: 1em;
   font-family: "Josefin Sans", sans-serif;
 }
@@ -134,7 +136,7 @@ a {
 /* --MOBILE-- */
 
 
-/*-- XS --*/
+/*-- XS--*/
 @media(min-width: 475px){
   * {
     padding: 0;
@@ -142,8 +144,9 @@ a {
     list-style: none;
     text-decoration: none;
   }
+
   .container {
-    width: 475px;
+    width: 100%;
     height: auto;
     display: flex;
     flex-wrap: wrap;
@@ -157,6 +160,7 @@ a {
   .logo {
     margin:40px 0px;
   }
+
   .left {
     width: 100%;
     margin: 0px 40px;
@@ -182,7 +186,7 @@ h1 {
 }
  .secondContainer__p {
     color: hsl(0, 36%, 70%);
-    text-align: justify;
+    text-align:center;
     font-size: 17px;
     width: 100%;
   }
@@ -192,8 +196,10 @@ h1 {
     position: relative;
     max-width: 600px;
   }
+
+ 
 .rigth-img {
-  background-image: url(../images/hero-desktop.jpg);
+  background-image: url(../images/hero-mobile.jpg);
   background-size: cover;
   background-position: top ;
   width: 100%;
@@ -242,13 +248,13 @@ footer {
 }
 
 /*SM*/
-@media(min-width: 640px) {
+@media(min-width: 640px) { 
   .container {
-    width: 640px;
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
   }
-
+ 
   input {
   width: 100%;
     display: block;
@@ -274,7 +280,7 @@ footer {
   }
 
   .rigth-img {
-    background-image: url(../images/hero-desktop.jpg);
+    background-image: url(../images/hero-mobile.jpg);
     background-size: cover;
     background-position: top;
     width: 100%;

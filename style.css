@@ -8,7 +8,9 @@
 body {
   background-image: url(../images/bg-pattern-desktop.svg);
   background-size: cover;
+  background-repeat: no-repeat;
   background-position: center center;
+  background-attachment: fixed;
   font-size: 1em;
   font-family: "Josefin Sans", sans-serif;
 }
@@ -16,12 +18,14 @@ body {
 
 .container {
   display: flex;
-  min-height: 100vh;
+  /*min-height: 100vh;*/
 }
+
 .left {
-  width: 60%;
+  width: 100%;
   padding: 0 100px 0 200px;
 }
+
 .rigth-img {
   background-image: url(../images/hero-desktop.jpg);
   background-size: cover;
@@ -56,7 +60,6 @@ h1 {
   max-width: 600px;
 }
 
-/* -- SUBMMIT INPUT  STYLE--*/
 .secondContainer__label {
   margin-top: 2em;
   margin-bottom: 2em;
@@ -130,45 +133,77 @@ footer {
 a {
   color: hsl(0, 0%, 100%);
 }
-
 /* --MOBILE-- */
-/*-- XS --*/
+
+
+/*-- XS--*/
 @media(min-width: 475px){
+  * {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+  }
+
   .container {
-    width: 475px;
+    width: 100%;
+    height: auto;
     display: flex;
     flex-wrap: wrap;
+  }
+  .Box__Logo{
+    width: 100%;
+    margin: 20px 40px;
+    padding: 0;
+    height: 100px;
+  }
+  .logo {
+    margin:40px 0px;
   }
 
   .left {
     width: 100%;
-    padding: 0px 30px;
+    margin: 0px 40px;
     height: 210px;
+    padding: 0px;
 }
 
 h1 {
-  font-size: 60px;
+  font-size: 40px;
   text-transform: uppercase;
   white-space: pre;
   color: hsl(0, 6%, 24%);
   letter-spacing: 0.3em;
   margin-top: 0px;
-  width: 100%;
-
-}
-.secondContainer__p {
-  color: hsl(0, 13%, 42%);
-  text-align: justify;
-  font-size: 20px;
-  margin-top: 20px;
+  text-align: center;
+  padding: 60px 0px 10px;
   width: 100%;
 }
+.secondContainer__h1--were {
+  color: hsl(0, 36%, 70%);
+  font-size: 40px;
+}
+ .secondContainer__p {
+    color: hsl(0, 36%, 70%);
+    text-align:center;
+    font-size: 17px;
+    width: 100%;
+  }
+  .secondContainer__label {
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+    position: relative;
+    max-width: 600px;
+  }
 
+ 
 .rigth-img {
-  background-image: url(../images/hero-desktop.jpg);
+  background-image: url(../images/hero-mobile.jpg);
   background-size: cover;
   background-position: top ;
   width: 100%;
+  height: 300px;
+  padding-bottom: 10px ;
 }
 input {
   width: 100%;
@@ -177,7 +212,7 @@ input {
   box-shadow: 2px 1px 8px hsl(0, 80%, 86%);
   border: hsl(0, 80%, 86%) solid;
   background-color: transparent;
-  padding: 12px;
+  padding: 15px;
   font-size: 12px;
   color: hsl(0, 74%, 74%);
 }
@@ -185,31 +220,50 @@ button {
   position: absolute;
   right: -35px;
   top: 0;
- 
-  border-radius: 50px;
+  border-radius: 60px;
   background-image: linear-gradient(
     to right,
     hsl(0, 80%, 86%),
     hsl(0, 74%, 74%)
   );
   border-style: none;
-  padding: 11px;
+  padding: 13px;
+  
 }
 
 button:hover {
   opacity: 0.6;
   cursor: pointer;
 }
+
+footer {
+  background-color: hsl(0, 36%, 70%);
+  padding: 15px;
+  text-align: center;
+  font-size: 14px;
+  width: 100%;
+  position:static;
+}
 }
 
 /*SM*/
-@media(min-width: 640px) {
+@media(min-width: 640px) { 
   .container {
-    width: 640px;
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
   }
-
+  h1 {
+    font-size: 48px;
+    width: 100%;
+  }
+  .secondContainer__h1--were {
+    color: hsl(0, 36%, 70%);
+    font-size: 43px;
+  }
+  .secondContainer__p {
+      font-size: 20px;
+  }
   input {
   width: 100%;
     display: block;
@@ -218,7 +272,7 @@ button:hover {
     border: hsl(0, 80%, 86%) solid;
     background-color: transparent;
     padding: 13px;
-    font-size: 13px;
+    font-size: 14px;
     color: hsl(0, 74%, 74%);
   }
   button {
@@ -235,17 +289,18 @@ button:hover {
   }
 
   .rigth-img {
-    background-image: url(../images/hero-desktop.jpg);
+    background-image: url(../images/hero-mobile.jpg);
     background-size: cover;
     background-position: top;
     width: 100%;
   }
+ 
 }
 
 /*MD*/
-@media(min-width: 678px){
+@media(min-width: 768px){
   .container {
-    width: 678px;
+    width :100%;
     display: flex;
     flex-wrap: wrap;
 }
@@ -254,27 +309,24 @@ button:hover {
   padding: 0px 40px;
 }
 
-input {
+h1 {
+  font-size: 50px;
   width: 100%;
-  display: block;
-  border-radius: 50px;
-  box-shadow: 2px 1px 8px hsl(0, 80%, 86%);
-  border: hsl(0, 80%, 86%) solid;
-  background-color: transparent;
-  padding: 13px;
-  font-size: 13px;
-  color: hsl(0, 74%, 74%);
+}
+.secondContainer__h1--were {
+  color: hsl(0, 36%, 70%);
+  font-size: 45px;
+}
+.secondContainer__p {
+    font-size: 22px;
+}
+
+input {
+  padding: 14px;
+  font-size: 18px;
+
 }
 button {
-  position: absolute;
-  right: -35px;
-  border-radius: 50px;
-  background-image: linear-gradient(
-    to right,
-    hsl(0, 80%, 86%),
-    hsl(0, 74%, 74%)
-  );
-  border-style: none;
-  padding: 11px;
+  padding: 15px;
 }
 }

@@ -350,8 +350,7 @@ a {
     padding: 0px;
   }
 
-
-  /*Controlado*/
+ 
   .rigth-img {
     background-image: url(../images/hero-desktop.jpg);
     background-size: cover;
@@ -364,7 +363,6 @@ a {
   }
 
 
-  /*Controlado*/
   .Box__Logo {
     width: 60%;
     margin: 40px 0px 40px 250px;

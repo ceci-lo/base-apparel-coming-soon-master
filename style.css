@@ -124,7 +124,85 @@ a {
 
 /* --MOBILE-- */
 
+@media(min-width: 320px) {
+  .container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .Box__Logo {
+    width: 100%;
+    margin: 20px 10px;
+    padding: 0;
+    height: 100px;
+  }
+  .left {
+    width: 100%;
+    margin: 0px 20px;
+    height: 210px;
+    padding: 0px;
+  }
+  
+  .secondContainer__h1--were {
+    color: hsl(0, 36%, 70%);
+    font-size: 30px;
+  }
+  h1 {
+    font-size: 25px;
+    text-transform: uppercase;
+    white-space: pre;
+    color: hsl(0, 6%, 24%);
+    letter-spacing: 0.2em;
+    margin-top: 20px;
+    text-align: center;
+    padding: 0px 10px;
+    width: 100%;
+  }
+  .secondContainer__p {
+    color: hsl(0, 36%, 70%);
+    text-align: center;
+    font-size: 15px;
+    width: 100%;
+  }
+  input {
+    width: 80%;
+    display: block;
+    border-radius: 50px;
+    box-shadow: 2px 1px 8px hsl(0, 80%, 86%);
+    border: hsl(0, 80%, 86%) solid;
+    background-color: transparent;
+    padding: 14px;
+    font-size: 11px;
+    color: hsl(0, 74%, 74%);
+  }
 
+  button {
+    position: absolute;
+    right: 22px;
+    top: 0;
+    border-radius: 60px;
+    background-image: linear-gradient(to right,
+        hsl(0, 80%, 86%),
+        hsl(0, 74%, 74%));
+    border-style: none;
+    padding: 11px;
+
+  }
+
+  button:hover {
+    opacity: 0.6;
+    cursor: pointer;
+  }
+  .rigth-img {
+    background-image: url(../images/hero-mobile.jpg);
+    background-size: cover;
+    background-position: top;
+    width: 100%;
+    height: 300px;
+    padding-bottom: 10px;
+  }
+}
 /*-- XS--*/
 @media(min-width: 475px) {
   * {
@@ -342,8 +420,8 @@ a {
   }
 
   .left {
-    width: 60%;
-    margin:150px 0px 0px 250px;
+    width: 50%;
+    margin:30px 0px 0px 150px;
 
     /*----Agregue apartir de acá*/
     order: 1;
@@ -355,17 +433,17 @@ a {
     background-image: url(../images/hero-desktop.jpg);
     background-size: cover;
     background-position: center center;
-    width: 40%;
-    height: 960px;
+ 
+    height:1120px;
     order: 2;
     flex: 1;
-    margin-top: -12.5rem;
+    margin-top: -25rem;
   }
 
 
   .Box__Logo {
-    width: 60%;
-    margin: 40px 0px 40px 250px;
+    width: 50%;
+    margin: 80px 0px 40px 150px;
     order: 1;
   }
 
@@ -399,14 +477,31 @@ a {
   }
 
   input {
-    width: 100%;
+    width: 80%;
     display: block;
     border-radius: 50px;
     box-shadow: 2px 1px 8px hsl(0, 80%, 86%);
     border: hsl(0, 80%, 86%) solid;
     background-color: transparent;
-    padding: 15px;
+    padding: 18px;
     font-size: 15px;
     color: hsl(0, 74%, 74%);
+  }
+  button {
+    position: absolute;
+    right: 80px;
+    top: 0;
+    width: 100px;
+    border-radius: 60px;
+    background-image: linear-gradient(to right,
+        hsl(0, 80%, 86%),
+        hsl(0, 74%, 74%));
+    border-style: none;
+    padding: 18px;
+  }
+  
+  button:hover {
+    opacity: 0.6;
+    cursor: pointer;
   }
 }
